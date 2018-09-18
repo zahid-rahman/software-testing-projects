@@ -1,0 +1,56 @@
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Section Form</h4>
+        </div>
+        <div class="modal-body">
+          <form  id="sectionFormID" name="sectionForm" class="form-horizontal" role="form" action="" method="post" onsubmit="saveSection(); return false;">
+  <div class="form-group">
+    <label for="secTitle" class="col-lg-2 control-label requiured"> Title</label>
+    <div class="col-lg-10">
+      <input name="secTitle"  required="required" type="text" class="form-control col-lg-12" id="secTitle" placeholder="Section title">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="sectionType" class="col-lg-2 control-label requiured">Type</label>
+    <div class="col-lg-10">
+     <select id="sectionType" name="sectionType" class="form-control col-lg-12" required> <option  selected ="selected"   value ="" >--Section Type  --</option><option     value ="1" >Primary & Primary </option><option     value ="2" >Secondary </option> </select>
+    </div>
+  </div>
+  
+    <div class="form-group">
+    <label for="sectionType" class="col-lg-2 control-label requiured">Activation Status</label>
+    <div class="col-lg-10">
+     <select id="sectionType" name="sectionType" class="form-control col-lg-12" required> <option  selected ="selected"   value ="" >--Section Type  --</option><option     value ="1" >Primary & Primary </option><option     value ="2" >Secondary </option> </select>
+    </div>
+  </div>
+ 
+   <div class="form-group">
+    <label for="secDescription" class="col-lg-2 control-label requiured">Descrition</label>
+    <div class="col-lg-10">
+       <textarea name="secDescription" id="secDescription" class="form-control col-lg-12" rows="3" placeholder="Section description"></textarea>
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <button type="submit" class="btn btn-info">Save Record</button>
+    </div>
+	
+	
+  </div>
+  <div id="sectionAjaxResponse">  </div>
+  
+</form>
+        </div>
+        <div class="modal-footer">
+          
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+			  
+			  <button type="button" class="btn btn-success"  data-toggle="modal" href="#myModal">New Section Record</button>
